@@ -30,7 +30,7 @@ if (file_exists(dirname(__FILE__) . '/local.php')) {
 } else {
 	/** local DB settings */
 	define( 'DB_NAME', 'gilm1406_university-data' );
-	define( 'DB_USER', 'gilm1406_admin' );
+	define( 'DB_USER', 'gilm1406' );
 	define( 'DB_PASSWORD', 'GabdRt-b=GMa' );
 	define( 'DB_HOST', 'localhost' );
 }
