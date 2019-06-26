@@ -22,15 +22,15 @@ define ('WP_DEBUG', false);
 
 if (file_exists(dirname(__FILE__) . '/local.php')) {
 	/** local DB settings */
-	define( 'DB_NAME', 'local' );
-	define( 'DB_USER', 'root' );
-	define( 'DB_PASSWORD', 'root' );
+	define( 'DB_NAME', 'dbname' );
+	define( 'DB_USER', 'dbuser' );
+	define( 'DB_PASSWORD', '123' );
 	define( 'DB_HOST', 'localhost' );
 
 } else {
 	/** local DB settings */
 	define( 'DB_NAME', 'gilm1406_university-data' );
-	define( 'DB_USER', 'gilm1406' );
+	define( 'DB_USER', 'gilm1406_admin' );
 	define( 'DB_PASSWORD', 'GabdRt-b=GMa' );
 	define( 'DB_HOST', 'localhost' );
 }
