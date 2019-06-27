@@ -155,6 +155,14 @@ require get_theme_file_path('/includes/like-route.php');
     return get_bloginfo('name');
   }
 
+// Customize logout
+
+add_action('wp_logout','auto_redirect_after_logout');
+function auto_redirect_after_logout(){
+  wp_redirect( home_url() );
+  exit();
+}
+
 // Force note posts to be openssl_get_private
 
 add_filter('wp_insert_post_data', 'makeNotePrivate', 10, 2);
